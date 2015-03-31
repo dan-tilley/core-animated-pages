@@ -95,7 +95,7 @@ You can configure the duration of the hero transition with the global variable
 <script>
 (function() {
 
-  var webkitStyles = '-webkit-transition' in document.documentElement.style
+  var webkitStyles = '-webkit-transition' in document.documentElement.style;
   var TRANSITION_CSSNAME = webkitStyles ? '-webkit-transition' : 'transition';
   var TRANSFORM_CSSNAME = webkitStyles ? '-webkit-transform' : 'transform';
   var TRANSITION_NAME = webkitStyles ? 'webkitTransition' : 'transition';
@@ -159,7 +159,7 @@ You can configure the duration of the hero transition with the global variable
           if (h$.indexOf(hs) === -1) {
             hsa$.push(hs);
           }
-        })
+        });
         h$ = h$.concat(hsa$);
       }
 
